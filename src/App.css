@@ -92,3 +92,124 @@ body {
     font-size: 14px;
     line-height: 1.4;
 }
+
+
+
+
+
+/* task4 */
+.app {
+    min-height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+}
+.app > h1 {
+    margin-bottom: 35px;
+    color:black;
+}
+.components {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.card {
+    width: 300px;
+    min-height: 230px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px black;
+}
+.card h2 {
+    margin-bottom: 20px;
+    color: rgb(40, 40, 40);
+}
+.count {
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: rgb(67, 67, 245);
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    background-color:rgb(67, 67, 245);
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+button:hover {
+    background-color: rgb(40, 40, 245);
+}
+.signin-content p {
+    margin-bottom: 20px;
+    color: gray;
+}
+.theme-card {
+    width: 300px;
+    min-height: 230px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px black;
+    transition: 0.3s;
+}
+.theme-card h2 {
+    margin-bottom: 25px;
+}
+.theme-card p {
+    margin-top: 20px;
+}
+.light-theme {
+    background-color: white;
+    color: black;
+}
+.dark-theme {
+    background-color: black;
+    color: white;
+}
+.signin-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+.signin-card {
+    width: 300px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px black;
+    text-align: center;
+}
+.signin-card h1 {
+    margin-bottom: 20px;
+    color: rgb(67, 67, 245);
+}
+.signin-card p {
+    margin-bottom: 20px;
+    color: gray;
+}
+.signin-card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    font-size: 14px;
+}
+.signin-card input:focus {
+    outline: none;
+    border-color: rgb(67, 67, 245);
+}
+.signin-card button {
+    width: 100%;
+    padding: 10px;
+}

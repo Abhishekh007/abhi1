@@ -113,6 +113,9 @@
 
 import "./App.css";
 import React from 'react'
+import UseStateHook from "./task4/UseStateHook";
+import DarkMode from "./task4/DarkMode";
+import SignIn from "./task4/SignIn";
 export default function App() {
     const employees = [
       {
@@ -156,7 +159,7 @@ export default function App() {
             branch: "Information Technology"
         }
     ];
-  return (
+  return (<div>
             <div className="container">
             <h1>Employee Details</h1>
             <div className="employee-container">
@@ -170,6 +173,16 @@ export default function App() {
                     </div>
                 ))}
             </div>
+            
+        </div>
+        <div className="app">
+            <h1>useState Hook</h1>
+            <div className="components">
+                <UseStateHook />
+                <DarkMode />
+                <SignIn />
+            </div>
+        </div>
         </div>
   )
 }
