@@ -111,78 +111,89 @@
 //   );
 // }
 
-import "./App.css";
-import React from 'react'
-import UseStateHook from "./task4/UseStateHook";
-import DarkMode from "./task4/DarkMode";
-import SignIn from "./task4/SignIn";
-export default function App() {
-    const employees = [
-      {
-            id: 1,
-            name: "Rahul Patil",
-            role: "Software Developer",
-            company: "Infosys",
-            experience: "2 Years",
-            branch: "Computer Science"
-        },
-        {
-            id: 2,
-            name: "Priyanka Patil",
-            role: "Web Developer",
-            company: "TCS",
-            experience: "1 Year",
-            branch: "Computer Science"
-        },
-        {
-            id: 3,
-            name: "Amit Eagappol",
-            role: "Software Engineer",
-            company: "Wipro",
-            experience: "3 Years",
-            branch: "Information Science"
-        },
-        {
-            id: 4,
-            name: "Ankit Patil",
-            role: "Frontend Developer",
-            company: "Accenture",
-            experience: "2 Years",
-            branch: "Computer Science"
-        },
-        {
-            id: 5,
-            name: "Sneha Joshi",
-            role: "UI Designer",
-            company: "Tech Mahindra",
-            experience: "1 Year",
-            branch: "Information Technology"
-        }
-    ];
-  return (<div>
-            <div className="container">
-            <h1>Employee Details</h1>
-            <div className="employee-container">
-                {employees.map((employee) => (
-                    <div className="employee-card" key={employee.id}>
-                        <h2>{employee.name}</h2>
-                        <p><b>Role:</b> {employee.role}</p>
-                        <p><b>Company:</b> {employee.company}</p>
-                        <p><b>Experience:</b> {employee.experience}</p>
-                        <p><b>Branch:</b> {employee.branch}</p>
-                    </div>
-                ))}
-            </div>
+// import "./App.css";
+// import React from 'react'
+// import UseStateHook from "./task4/UseStateHook";
+// import DarkMode from "./task4/DarkMode";
+// import SignIn from "./task4/SignIn";
+// export default function App() {
+//     const employees = [
+//       {
+//             id: 1,
+//             name: "Rahul Patil",
+//             role: "Software Developer",
+//             company: "Infosys",
+//             experience: "2 Years",
+//             branch: "Computer Science"
+//         },
+//         {
+//             id: 2,
+//             name: "Priyanka Patil",
+//             role: "Web Developer",
+//             company: "TCS",
+//             experience: "1 Year",
+//             branch: "Computer Science"
+//         },
+//         {
+//             id: 3,
+//             name: "Amit Eagappol",
+//             role: "Software Engineer",
+//             company: "Wipro",
+//             experience: "3 Years",
+//             branch: "Information Science"
+//         },
+//         {
+//             id: 4,
+//             name: "Ankit Patil",
+//             role: "Frontend Developer",
+//             company: "Accenture",
+//             experience: "2 Years",
+//             branch: "Computer Science"
+//         },
+//         {
+//             id: 5,
+//             name: "Sneha Joshi",
+//             role: "UI Designer",
+//             company: "Tech Mahindra",
+//             experience: "1 Year",
+//             branch: "Information Technology"
+//         }
+//     ];
+//   return (<div>
+//             <div className="container">
+//             <h1>Employee Details</h1>
+//             <div className="employee-container">
+//                 {employees.map((employee) => (
+//                     <div className="employee-card" key={employee.id}>
+//                         <h2>{employee.name}</h2>
+//                         <p><b>Role:</b> {employee.role}</p>
+//                         <p><b>Company:</b> {employee.company}</p>
+//                         <p><b>Experience:</b> {employee.experience}</p>
+//                         <p><b>Branch:</b> {employee.branch}</p>
+//                     </div>
+//                 ))}
+//             </div>
             
-        </div>
-        <div className="app">
-            <h1>useState Hook</h1>
-            <div className="components">
-                <UseStateHook />
-                <DarkMode />
-                <SignIn />
-            </div>
-        </div>
-        </div>
+//         </div>
+//         <div className="app">
+//             <h1>useState Hook</h1>
+//             <div className="components">
+//                 <UseStateHook />
+//                 <DarkMode />
+//                 <SignIn />
+//             </div>
+//         </div>
+//         </div>
+//   )
+// }
+
+
+import React from 'react'
+import ConditionalForm from './task5/ConditionalForm';
+export default function App() {
+  return (
+    <div>
+      <ConditionalForm />
+    </div>
   )
 }
