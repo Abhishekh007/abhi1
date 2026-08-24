@@ -190,10 +190,12 @@
 
 import React from 'react'
 import ConditionalForm from './task5/ConditionalForm';
+import FetchUsers from './task6/FetchUsers';
 export default function App() {
   return (
     <div>
-      <ConditionalForm />
+      {/* <ConditionalForm /> */}
+      <FetchUsers />
     </div>
   )
 }
