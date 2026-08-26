@@ -189,13 +189,15 @@
 
 
 import React from 'react'
-import ConditionalForm from './task5/ConditionalForm';
-import FetchUsers from './task6/FetchUsers';
+// import ConditionalForm from './task5/ConditionalForm'
+// import FetchUsers from './task6/FetchUsers';
+import ProfilePicture from './task 7/ProfilePicture';
 export default function App() {
   return (
     <div>
       {/* <ConditionalForm /> */}
-      <FetchUsers />
+      {/* <FetchUsers /> */}
+      <ProfilePicture />
     </div>
   )
 }
