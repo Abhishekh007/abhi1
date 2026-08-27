@@ -192,12 +192,21 @@ import React from 'react'
 // import ConditionalForm from './task5/ConditionalForm'
 // import FetchUsers from './task6/FetchUsers';
 import ProfilePicture from './task 7/ProfilePicture';
+import ThemeProvider from "./task8/ThemeContext";
+import ComponentOne from "./task8/ComponentOne";
+import "./task8/ThemeContext.css";
 export default function App() {
   return (
     <div>
       {/* <ConditionalForm /> */}
       {/* <FetchUsers /> */}
-      <ProfilePicture />
+      {/* <ProfilePicture /> */}
+      <ThemeProvider>
+            <div className="app">
+                <h1>useContext Hook</h1>
+                <ComponentOne />
+            </div>
+        </ThemeProvider>
     </div>
   )
 }
