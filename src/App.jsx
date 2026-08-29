@@ -188,25 +188,126 @@
 // }
 
 
-import React from 'react'
-// import ConditionalForm from './task5/ConditionalForm'
-// import FetchUsers from './task6/FetchUsers';
-import ProfilePicture from './task 7/ProfilePicture';
-import ThemeProvider from "./task8/ThemeContext";
-import ComponentOne from "./task8/ComponentOne";
-import "./task8/ThemeContext.css";
+// import React from 'react'
+// // import ConditionalForm from './task5/ConditionalForm'
+// // import FetchUsers from './task6/FetchUsers';
+// import ProfilePicture from './task 7/ProfilePicture';
+// import ThemeProvider from "./task8/ThemeContext";
+// import ComponentOne from "./task8/ComponentOne";
+// import "./task8/ThemeContext.css";
+// export default function App() {
+//   return (
+//     <div>
+//       {/* <ConditionalForm /> */}
+//       {/* <FetchUsers /> */}
+//       {/* <ProfilePicture /> */}
+//       <ThemeProvider>
+//             <div className="app">
+//                 <h1>useContext Hook</h1>
+//                 <ComponentOne />
+//             </div>
+//         </ThemeProvider>
+//     </div>
+//   )
+// }
+
+
+import React from "react";
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+    NavLink
+} from "react-router-dom";
+import Home from "./task9/Home";
+import About from "./task9/About";
+import Services from "./task9/Services";
+import WebDevelopment from "./task9/WebDevelopment";
+import AppDevelopment from "./task9/AppDevelopment";
+import UIUXDesign from "./task9/UIUXDesign";
+import Products from "./task9/Products";
+import Contact from "./task9/Contact";
+import "./task9/Task9.css";
 export default function App() {
-  return (
-    <div>
-      {/* <ConditionalForm /> */}
-      {/* <FetchUsers /> */}
-      {/* <ProfilePicture /> */}
-      <ThemeProvider>
-            <div className="app">
-                <h1>useContext Hook</h1>
-                <ComponentOne />
-            </div>
-        </ThemeProvider>
-    </div>
-  )
+    return (
+        <BrowserRouter>
+            <nav className="navbar">
+                <h2 className="logo">My Website</h2>
+                <div className="nav-links">
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            isActive ? "active" : ""
+                        }
+                    >
+                        Home
+                    </NavLink>
+                    <NavLink
+                        to="/about"
+                        className={({ isActive }) =>
+                            isActive ? "active" : ""
+                        }
+                    >
+                        About
+                    </NavLink>
+                    <NavLink
+                        to="/services"
+                        className={({ isActive }) =>
+                            isActive ? "active" : ""
+                        }
+                    >
+                        Services
+                    </NavLink>
+                    <NavLink
+                        to="/products"
+                        className={({ isActive }) =>
+                            isActive ? "active" : ""
+                        }
+                    >
+                        Products
+                    </NavLink>
+                    <NavLink
+                        to="/contact"
+                        className={({ isActive }) =>
+                            isActive ? "active" : ""
+                        }
+                    >
+                        Contact
+                    </NavLink>
+                </div>
+            </nav>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route
+                    path="/about"
+                    element={<About />}
+                />
+                <Route
+                    path="/services"
+                    element={<Services />}
+                >
+                    <Route
+                        path="web-development"
+                        element={<WebDevelopment />}
+                    />
+                    <Route
+                        path="app-development"
+                        element={<AppDevelopment />}
+                    />
+                    <Route
+                        path="ui-ux-design"
+                        element={<UIUXDesign />}
+                    />
+                </Route>
+                <Route
+                    path="/products"
+                    element={<Products />}
+                />
+                <Route
+                    path="/contact"
+                    element={<Contact />}
+                />
+            </Routes>
+        </BrowserRouter>
+    );
 }

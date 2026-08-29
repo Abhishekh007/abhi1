@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+.navbar {
+    width: 100%;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    color: white;
+}
+.logo {
+    font-size: 24px;
+}
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+.nav-links a:hover {
+    background-color: blue;
+}
+.nav-links a.active {
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+}
+.page {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.page h1 {
+    margin-bottom: 20px;
+    color: blue;
+}
+.page p {
+    margin-bottom: 15px;
+    color: gray;
+}
+.service-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.service-links a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: blue;
+    border: 2px solid blue;
+    border-radius: 8px;
+}
+.service-links a:hover {
+    background-color: blue;
+    color: white;
+}
+.service-links a.sub-active {
+    background-color: blue;
+    color: white;
+}
+.nested-content {
+    padding: 25px;
+    border-radius: 10px;
+    background-color: white;
+}
+.nested-content h2 {
+    margin-bottom: 15px;
+    color: blue;
+}
