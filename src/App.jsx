@@ -212,100 +212,132 @@
 // }
 
 
+// import React from "react";
+// import {
+//     BrowserRouter,
+//     Routes,
+//     Route,
+//     NavLink
+// } from "react-router-dom";
+// import Home from "./task9/Home";
+// import About from "./task9/About";
+// import Services from "./task9/Services";
+// import WebDevelopment from "./task9/WebDevelopment";
+// import AppDevelopment from "./task9/AppDevelopment";
+// import UIUXDesign from "./task9/UIUXDesign";
+// import Products from "./task9/Products";
+// import Contact from "./task9/Contact";
+// import "./task9/Task9.css";
+// export default function App() {
+//     return (
+//         <BrowserRouter>
+//             <nav className="navbar">
+//                 <h2 className="logo">My Website</h2>
+//                 <div className="nav-links">
+//                     <NavLink
+//                         to="/"
+//                         className={({ isActive }) =>
+//                             isActive ? "active" : ""
+//                         }
+//                     >
+//                         Home
+//                     </NavLink>
+//                     <NavLink
+//                         to="/about"
+//                         className={({ isActive }) =>
+//                             isActive ? "active" : ""
+//                         }
+//                     >
+//                         About
+//                     </NavLink>
+//                     <NavLink
+//                         to="/services"
+//                         className={({ isActive }) =>
+//                             isActive ? "active" : ""
+//                         }
+//                     >
+//                         Services
+//                     </NavLink>
+//                     <NavLink
+//                         to="/products"
+//                         className={({ isActive }) =>
+//                             isActive ? "active" : ""
+//                         }
+//                     >
+//                         Products
+//                     </NavLink>
+//                     <NavLink
+//                         to="/contact"
+//                         className={({ isActive }) =>
+//                             isActive ? "active" : ""
+//                         }
+//                     >
+//                         Contact
+//                     </NavLink>
+//                 </div>
+//             </nav>
+//             <Routes>
+//                 <Route path="/" element={<Home />} />
+//                 <Route
+//                     path="/about"
+//                     element={<About />}
+//                 />
+//                 <Route
+//                     path="/services"
+//                     element={<Services />}
+//                 >
+//                     <Route
+//                         path="web-development"
+//                         element={<WebDevelopment />}
+//                     />
+//                     <Route
+//                         path="app-development"
+//                         element={<AppDevelopment />}
+//                     />
+//                     <Route
+//                         path="ui-ux-design"
+//                         element={<UIUXDesign />}
+//                     />
+//                 </Route>
+//                 <Route
+//                     path="/products"
+//                     element={<Products />}
+//                 />
+//                 <Route
+//                     path="/contact"
+//                     element={<Contact />}
+//                 />
+//             </Routes>
+//         </BrowserRouter>
+//     );
+// }
+
+
+// task10
 import React from "react";
 import {
     BrowserRouter,
     Routes,
-    Route,
-    NavLink
+    Route
 } from "react-router-dom";
-import Home from "./task9/Home";
-import About from "./task9/About";
-import Services from "./task9/Services";
-import WebDevelopment from "./task9/WebDevelopment";
-import AppDevelopment from "./task9/AppDevelopment";
-import UIUXDesign from "./task9/UIUXDesign";
-import Products from "./task9/Products";
-import Contact from "./task9/Contact";
-import "./task9/Task9.css";
+import UserList from "./task10/UserList";
+import UserDetails from "./task10/UserDetails";
+import "./task10/Task10.css";
 export default function App() {
     return (
         <BrowserRouter>
-            <nav className="navbar">
-                <h2 className="logo">My Website</h2>
-                <div className="nav-links">
-                    <NavLink
-                        to="/"
-                        className={({ isActive }) =>
-                            isActive ? "active" : ""
-                        }
-                    >
-                        Home
-                    </NavLink>
-                    <NavLink
-                        to="/about"
-                        className={({ isActive }) =>
-                            isActive ? "active" : ""
-                        }
-                    >
-                        About
-                    </NavLink>
-                    <NavLink
-                        to="/services"
-                        className={({ isActive }) =>
-                            isActive ? "active" : ""
-                        }
-                    >
-                        Services
-                    </NavLink>
-                    <NavLink
-                        to="/products"
-                        className={({ isActive }) =>
-                            isActive ? "active" : ""
-                        }
-                    >
-                        Products
-                    </NavLink>
-                    <NavLink
-                        to="/contact"
-                        className={({ isActive }) =>
-                            isActive ? "active" : ""
-                        }
-                    >
-                        Contact
-                    </NavLink>
-                </div>
-            </nav>
             <Routes>
-                <Route path="/" element={<Home />} />
                 <Route
-                    path="/about"
-                    element={<About />}
+                    path="/"
+                    element={<UserList />}
                 />
                 <Route
-                    path="/services"
-                    element={<Services />}
-                >
-                    <Route
-                        path="web-development"
-                        element={<WebDevelopment />}
-                    />
-                    <Route
-                        path="app-development"
-                        element={<AppDevelopment />}
-                    />
-                    <Route
-                        path="ui-ux-design"
-                        element={<UIUXDesign />}
-                    />
-                </Route>
-                <Route
-                    path="/products"
-                    element={<Products />}
+                    path="/users"
+                    element={<UserList />}
                 />
                 <Route
-                    path="/contact"
-                    element={<Contact />}
+                    path="/users/:id"
+                    element={<UserDetails />}
                 />
             </Routes>
         </BrowserRouter>

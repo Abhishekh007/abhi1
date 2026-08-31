@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+}
+.user-list-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+}
+.user-list-page h1 {
+    color:rgb(88, 88, 245);
+    margin-bottom: 10px;
+}
+.subtitle {
+    color: gray;
+    margin-bottom: 30px;
+}
+.user-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.user-card {
+    width: 250px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+        text-decoration: none;
+    color: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+.user-card h2 {
+    color: rgb(88, 88, 245);
+    margin-bottom: 15px;
+}
+.user-card p {
+    color: gray;
+    margin-bottom: 15px;
+}
+.user-card span {
+    color: rgb(88, 88, 245);
+    font-weight: bold;
+}
+.details-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+.details-card {
+    width: 450px;
+    max-width: 100%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+.details-card h1 {
+    text-align: center;
+        color: rgb(88, 88, 245);
+    margin-bottom: 25px;
+}
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 12px 0;
+    border-bottom: 1px solid white;
+}
+.detail-item b {
+    color: rgb(58, 58, 58);
+}
+.detail-item span {
+    color: gray;
+    text-align: right;
+}
+.back-button {
+   display: block;
+    margin: 25px auto 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(88, 88, 245);
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+.back-button:hover {
+    background-color: rgb(88, 88, 245);
+}
+.loading {
+    min-height: 100vh;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(88, 88, 245);
+}
+.error {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ gap: 20px;
+    color: red;
+}
+.error button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(88, 88, 245);
+    color: white;
+    cursor: pointer;
+}
