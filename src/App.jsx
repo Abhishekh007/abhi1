@@ -314,30 +314,57 @@
 
 
 // task10
+// import React from "react";
+// import {
+//     BrowserRouter,
+//     Routes,
+//     Route
+// } from "react-router-dom";
+// import UserList from "./task10/UserList";
+// import UserDetails from "./task10/UserDetails";
+// import "./task10/Task10.css";
+// export default function App() {
+//     return (
+//         <BrowserRouter>
+//             <Routes>
+//                 <Route
+//                     path="/"
+//                     element={<UserList />}
+//                 />
+//                 <Route
+//                     path="/users"
+//                     element={<UserList />}
+//                 />
+//                 <Route
+//                     path="/users/:id"
+//                     element={<UserDetails />}
+//                 />
+//             </Routes>
+//         </BrowserRouter>
+//     );
+// }
+
+
+// task11
 import React from "react";
 import {
     BrowserRouter,
     Routes,
     Route
 } from "react-router-dom";
-import UserList from "./task10/UserList";
-import UserDetails from "./task10/UserDetails";
-import "./task10/Task10.css";
+import Pagination from "./task 11/Pagination";
+import "./task 11/Pagination.css";
 export default function App() {
     return (
         <BrowserRouter>
             <Routes>
                 <Route
                     path="/"
-                    element={<UserList />}
+                    element={<Pagination />}
                 />
                 <Route
                     path="/users"
-                    element={<UserList />}
-                />
-                <Route
-                    path="/users/:id"
-                    element={<UserDetails />}
+                    element={<Pagination />}
                 />
             </Routes>
         </BrowserRouter>
