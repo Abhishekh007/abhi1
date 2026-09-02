@@ -346,27 +346,39 @@
 
 
 // task11
+// import React from "react";
+// import {
+//     BrowserRouter,
+//     Routes,
+//     Route
+// } from "react-router-dom";
+// import Pagination from "./task 11/Pagination";
+// import "./task 11/Pagination.css";
+// export default function App() {
+//     return (
+//         <BrowserRouter>
+//             <Routes>
+//                 <Route
+//                     path="/"
+//                     element={<Pagination />}
+//                 />
+//                 <Route
+//                     path="/users"
+//                     element={<Pagination />}
+//                 />
+//             </Routes>
+//         </BrowserRouter>
+//     );
+// }
+
+//task12
+
 import React from "react";
-import {
-    BrowserRouter,
-    Routes,
-    Route
-} from "react-router-dom";
-import Pagination from "./task 11/Pagination";
-import "./task 11/Pagination.css";
+import CrudUsers from "./task12/CrudUsers";
 export default function App() {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route
-                    path="/"
-                    element={<Pagination />}
-                />
-                <Route
-                    path="/users"
-                    element={<Pagination />}
-                />
-            </Routes>
-        </BrowserRouter>
+        <div>
+            <CrudUsers />
+        </div>
     );
 }
