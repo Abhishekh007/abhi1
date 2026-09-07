@@ -373,12 +373,37 @@
 
 //task12
 
+// import React from "react";
+// import CrudUsers from "./task12/CrudUsers";
+// export default function App() {
+//     return (
+//         <div>
+//             <CrudUsers />
+//         </div>
+//     );
+// }
+
+//task13
 import React from "react";
-import CrudUsers from "./task12/CrudUsers";
+import ComponentA from "./components/ComponentA";
+import ComponentB from "./components/ComponentB";
+import "./components/Redux.css";
+
 export default function App() {
+
     return (
-        <div>
-            <CrudUsers />
+        <div className="app">
+
+            <h1>Redux Store Implementation</h1>
+
+            <div className="container">
+
+                <ComponentA />
+
+                <ComponentB />
+
+            </div>
+
         </div>
     );
 }
